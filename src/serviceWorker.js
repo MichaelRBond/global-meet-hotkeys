@@ -41,6 +41,11 @@ browser.commands.onCommand.addListener(async (command) => {
           type: MESSAGE_TYPE_ENUM.TOGGLE,
           value: TOGGLE_MESSAGE_VALUE_ENUM.CAMERA,
         });
+      case COMMANDS_ENUM.TOGGLE_HAND:
+        return browser.tabs.sendMessage(meetTab.id, {
+          type: MESSAGE_TYPE_ENUM.TOGGLE,
+          value: TOGGLE_MESSAGE_VALUE_ENUM.HAND,
+        });
       case COMMANDS_ENUM.FOCUS_MEET:
         if(!meetTab.windowId) {
           return;

@@ -43,4 +43,3 @@ You can manually set them back by going to `chrome://extensions/shortcuts` and s
 ## License
 
 MIT License
-
