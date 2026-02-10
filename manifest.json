@@ -45,6 +45,13 @@
       "description": "Toggles the camera on and off",
       "global": true
     },
+    "toggleHand": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+3"
+      },
+      "description": "Toggles the hand raise",
+      "global": true
+    },
     "focusMeet": {
       "suggested_key": {
         "default": "Ctrl+Shift+6"
@@ -53,9 +60,6 @@
       "global": true
     },
     "jumpToBookmarkedMeet": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+7"
-      },
       "description": "Jumps to the bookmarked meet url if no meet is open. Sets the current meet as bookmarked if a meet is open.",
       "global": true
     }

@@ -46,6 +46,14 @@
         "description": "Toggles the camera on and off",
         "global": true
       },
+      "toggleHand": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+3",
+          "mac": "MacCtrl+Shift+3"
+        },
+        "description": "Toggles the hand raise",
+        "global": true
+      },
       "focusMeet": {
         "suggested_key": {
           "default": "Ctrl+Shift+6",

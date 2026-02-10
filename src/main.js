@@ -66,6 +66,8 @@ const getBrowser = () => {
       type: MESSAGE_TYPE_ENUM.SET_MEET_TAB,
     });
 
+    const findHandRaiseButton = () => document.querySelector('button[aria-label*="hand" i]');
+
     const listeners = [
       setupWorkerEventListeners(
         TOGGLE_MESSAGE_VALUE_ENUM.MIC,
@@ -74,6 +76,10 @@ const getBrowser = () => {
       setupWorkerEventListeners(
         TOGGLE_MESSAGE_VALUE_ENUM.CAMERA,
         debounce(() => cameraButton.click(), DEBOUNCE_INTERVAL_MS),
+      ),
+      setupWorkerEventListeners(
+        TOGGLE_MESSAGE_VALUE_ENUM.HAND,
+        debounce(() => findHandRaiseButton()?.click(), DEBOUNCE_INTERVAL_MS),
       ),
     ];
 
