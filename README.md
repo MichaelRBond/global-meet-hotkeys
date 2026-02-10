@@ -2,6 +2,19 @@
 
 A Chrome extension that provides global hotkeys for Google Meet, allowing you to control your microphone and camera from anywhere on your computer.
 
+## Forked Version
+
+This was originally forked from [global-meet-hotkeys](https://github.com/Kamefrede/global-meet-hotkeys).
+
+I forked this because I do not trust browser extensions, and wanted to ensure
+that this remained a secure extension that I could use.
+
+Both Claude code and Codex reviewed this repo and found no malicious intent.
+
+> This extension is safe to use. It does exactly what it claims — listens for global
+  hotkeys and clicks Meet's mute/camera buttons. It has no network access, no tracking,
+  no data collection, and its permissions are the minimum required for its functionality.
+
 ## Motivation
 
 This extension was born out of personal frustration with the limitations of the [google-meet-ptt](https://github.com/mahadevans87/google-meet-ptt) extension. I wanted a simple, reliable way to control my Meet sessions globally, regardless of which window or application was in focus.
@@ -31,14 +44,3 @@ You can manually set them back by going to `chrome://extensions/shortcuts` and s
 
 MIT License
 
-## Chrome Web Store
-
-Soon.
-
-## Firefox
-
-Soon. Important note however is that [Firefox currently does not support global hotkeys](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/commands).
-
-## Safari
-
-Uhh. Probably not.
